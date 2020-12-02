@@ -1,0 +1,38 @@
+.navigation {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: 3rem;
+    width: 10rem;
+    background-color: slategray;
+    margin-right: auto;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: block;
+    list-style: none;
+    &:not(last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $color-body-text;
+    text-decoration: none;
+    padding: 2.5rem 2.5rem;
+    font-size: 1.6rem;
+  }
+}
