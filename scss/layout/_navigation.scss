@@ -1,5 +1,5 @@
 .navigation {
-  background-color: transparent;
+  background-color: $color-white;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 
   .logo {
     height: 3rem;

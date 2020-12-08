@@ -8,13 +8,25 @@ img {
   max-width: $container-max-width;
   margin: 0 auto;
 
+  &--narrow {
+    width: $container-narrow-width;
+    max-width: $container-narrow-width;
+    margin: 0 auto;
+  }
+
   &--navigation {
     width: $navigation-container-max-width;
     max-width: $navigation-container-max-width;
     margin: 0 auto;
   }
+
+  &--wide {
+    width: $container-wide-width;
+    max-width: $container-wide-width;
+    margin: 0 auto;
+  }
 }
 
 .section {
-  padding: 8rem 0;
+  padding: 7rem 0;
 }

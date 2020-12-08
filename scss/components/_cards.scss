@@ -1,0 +1,27 @@
+.cards {
+  display: flex;
+}
+
+.card {
+  background-color: $color-white;
+  // color: $color-white;
+  @extend %box-shadow;
+  border-radius: $border-radius-lg;
+  padding: 3rem;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    margin-bottom: 3rem;
+  }
+
+  &__link {
+    color: $color-white;
+  }
+}
