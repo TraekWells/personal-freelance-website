@@ -9,23 +9,39 @@
     cursor: pointer;
     overflow: hidden;
 
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
     &__question {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-weight: bold;
+      color: $color-primary-900;
     }
 
     &__answer {
-      height: 0;
+      max-height: 0;
       opacity: 0;
       visibility: hidden;
+      transition: 0.2s ease-in-out all;
     }
 
     p {
       margin: 0;
     }
 
+    svg {
+      transition: transform 0.2s ease;
+    }
+
     &.open {
+      .faq__answer {
+        max-height: 9999rem;
+        opacity: 1;
+        visibility: visible;
+      }
       svg {
         transform: rotate(180deg);
       }

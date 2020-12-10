@@ -1,8 +1,43 @@
 .footer {
-  .copyright {
+  background-color: $color-primary-100;
+  margin-top: 6rem;
+  &__top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem 0;
+  }
+
+  &__bottom {
     color: $color-white;
     text-align: center;
     background-color: $color-primary-900;
     padding: 1.5rem 0;
+  }
+
+  &-image {
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    margin-bottom: 2rem;
+  }
+
+  &-bio {
+    font-size: 1.6rem;
+  }
+
+  &-list {
+    h4 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: $color-body-text;
+      font-size: 1.5rem;
+    }
   }
 }

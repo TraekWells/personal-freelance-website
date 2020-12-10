@@ -1,9 +1,9 @@
-.projects {
+.homepage-projects {
   display: flex;
   flex-direction: column;
 }
 
-.project {
+.homepage-project {
   display: flex;
   justify-content: center;
 
@@ -35,7 +35,7 @@
   }
 
   &:nth-child(2) {
-    .project__content {
+    .homepage-project__content {
       order: -1;
       z-index: 5;
       margin: 7rem -10rem 7rem 0;

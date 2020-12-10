@@ -44,6 +44,7 @@ h3 {
 }
 
 h4 {
+  color: $color-primary-700;
   font-size: 1.7rem;
 }
 
@@ -102,8 +103,9 @@ h4 {
 }
 
 h1,
-h2 {
-  color: $color-primary-900;
+h2,
+h3 {
+  color: $color-primary-700;
 }
 
 h1 {
@@ -114,6 +116,10 @@ h1 {
 h2 {
   font-size: 3rem;
   text-align: center;
+}
+
+h3 {
+  margin-bottom: 2rem;
 }
 
 a {
@@ -134,12 +140,13 @@ button {
 
 .header-lead {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
   display: block;
   font-family: $font-stack-body;
   color: $color-primary-300;
   letter-spacing: 0.8px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .lead {
@@ -149,6 +156,7 @@ button {
 .text-link {
   display: flex;
   color: $color-primary-700;
+  align-items: center;
 
   &:hover {
     svg {

@@ -1,16 +1,23 @@
 .cards {
   display: flex;
+
+  &:hover .card:not(:hover) {
+    opacity: 0.3;
+  }
 }
 
 .card {
-  background-color: $color-white;
-  // color: $color-white;
-  @extend %box-shadow;
+  background-color: $color-primary-100;
   border-radius: $border-radius-lg;
   padding: 3rem;
+  transition: 0.2s ease all;
 
   &:not(:last-child) {
     margin-right: 2rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 
   &__title {

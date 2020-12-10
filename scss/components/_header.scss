@@ -1,7 +1,25 @@
 .header {
   text-align: center;
+  padding-top: 14rem;
 
   &--home {
-    text-align: left;
+    display: flex;
+
+    &__text {
+      text-align: left;
+      flex-basis: 65%;
+      margin-right: 9rem;
+    }
+
+    &__image-container {
+      flex-basis: 35%;
+      height: 40rem;
+
+      img {
+        border-radius: 1rem;
+        object-fit: cover;
+        height: 110%;
+      }
+    }
   }
 }
