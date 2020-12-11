@@ -86,6 +86,7 @@
       </article>
       <article class="post-layout__sidebar">
         <article class="recent-posts">
+          
           <h4>Recent Posts</h4>
           <ul>
             <?php 

@@ -9,21 +9,21 @@
 </head>
 
 <body <?php body_class(); ?>>
-<nav class="navigation container--navigation">
-  <a class="logo">Logo</a>
-  <ul class="navigation__list">
-    <li class="navigation__item">
-      <a href="services.html" class="navigation__link">Services</a>
-    </li>
-    <li class="navigation__item">
-      <a href="portfolio.html" class="navigation__link">Portfolio</a>
-    </li>
-    <li class="navigation__item">
-      <a href="my-story.html" class="navigation__link">My Story</a>
-    </li>
-    <li class="navigation__item">
-      <a href="process.html" class="navigation__link">Process</a>
-    </li>
-  </ul>
-  <a class="button button--primary" href="#">Contact Me Today</a>
+<nav class="navigation">
+  <div class="container--navigation">
+    <a  href="<?php echo get_site_url('/'); ?>" class="logo">Logo</a>
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a href="<?php echo site_url( '/services' ); ?>" class="navigation__link">Services</a>
+      </li>
+      <li class="navigation__item">
+        <a href="<?php echo get_post_type_archive_link('project'); ?>" class="navigation__link">Portfolio</a>
+      </li>
+      <li class="navigation__item">
+        <a href="<?php echo site_url( '/my-story' ); ?>" class="navigation__link">My Story</a>
+      </li>
+    </ul>
+    <a class="button button--ghost navigation__cta" href="<?php echo site_url( '/contact-me' ); ?>">Contact Me Today</a>
+    <button class="button button--ghost menu">Menu</button>
+  </div>
 </nav>

@@ -4,13 +4,16 @@ const gulp = require("gulp"),
   autoprefixer = require("autoprefixer"),
   cssnano = require("cssnano"),
   browserSync = require("browser-sync").create(),
-  settings = require("./settings");
+  settings = require("./settings"),
+  sourcemaps = require("gulp-sourcemaps");
 
 function scss() {
   return gulp
     .src("./scss/**/*.scss")
+    .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([autoprefixer, cssnano]))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest("./css"))
     .pipe(browserSync.stream());
 }

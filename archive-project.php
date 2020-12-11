@@ -1,19 +1,15 @@
 <?php get_header(); ?>
 
-<header class="header">
-  <img src="<?php echo get_template_directory_uri() . '/img/portfolio-hero-image.jpg'; ?>" alt="" />
-  <div class="header__content">
-    <h1>Portfolio</h1>
-    <p class="header-subtitle">
-      Here are a few projects that I've completed over the past few years.
-    </p>
+<header class="header intro">
+  <div class="container--narrow">
+    <span class="header-lead">Portfolio</span>
+    <h1>Projects That I’ve Worked On Recently</h1>
+    <div class="seperator"></div>
+    <p>Si sine causa, mox videro; interea hoc tenebo, si ob aliquam causam non provident, similique sunt vitae dicta sunt, fecerint, virtutem iis per se esse appetendum, alterum esse fugiendum itaque turbent.</p>
   </div>
 </header>
-<main class="main">
-  <section class="section section--dark-1">
+  <section class="section">
     <div class="container">
-      <p class="section-intro">What I've Done</p>
-      <h2>More Projects</h2>
       <?php 
         $projectQuery = new WP_Query(array(
           'post_type' => 'project',
@@ -25,34 +21,18 @@
           $imageId = get_post_thumbnail_id(get_the_ID());
           $altText = get_post_meta($imageId, '_wp_attachment_image_alt', true);
       ?>
-        <div class="section__content project">
-          <div class="section__content-column">
-            <img src="<?php the_post_thumbnail_url('project-thumbnail'); ?>" alt="<?php echo $altText; ?>" />
-          </div>
-          <div class="section__content-column">
-            <h3 class="margin-bottom-0"><?php the_title(); ?></h3>
-            <p class="project-tasks text-muted">
-              <?php 
-                echo get_field('role')[0];
-                if (get_field('role')[1]) {
-                  echo '/' . get_field('role')[1];
-                }
-              ?>
-            </p>
-            <?php the_excerpt(); ?>
-            <div class="button-group">
-              <a href="<?php the_permalink() ?>" class="button button--primary" rel="noopener noreferrer">Project Details <ion-icon name="arrow-forward-outline"></ion-icon>
-              </a>
-            </div>
-          </div>
+      <div class="horizontal-feed">
+        <div class="horizontal-feed__image">
+          <img src="<?php the_post_thumbnail_url('project-thumbnail'); ?>" alt="<?php echo $altText; ?>" />
         </div>
-          <?php } wp_reset_postdata(); ?>
-    </div>
-    <div class="link margin-top-4">
-      <a href="https://codepen.io/traekwells" target="_blank" rel="noopener noreferrer">See More Smaller Projects</a>
-      <ion-icon name="arrow-forward-outline"></ion-icon>
+        <div class="horizontal-feed__content">
+          <h3 class="margin-bottom-0"><?php the_title(); ?></h3>
+          <p><?php the_excerpt(); ?></p>
+          <a href="<?php echo the_permalink(); ?>" class="text-link">Project Details <i data-feather="arrow-right"></i></a>
+        </div>
+      </div>
+      <?php } wp_reset_postdata(); ?>
     </div>
   </section>
-</main>
 
 <?php get_footer(); ?>
