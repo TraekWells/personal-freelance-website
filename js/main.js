@@ -13,3 +13,9 @@ const toggleFaq = function (e) {
 faqs.forEach(function (faq) {
   faq.addEventListener("click", toggleFaq);
 });
+
+/* ===================
+ Mobile Navbar
+=================== */
+
+const navbar = document.querySelector(".navigation");
