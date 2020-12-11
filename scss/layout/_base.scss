@@ -1,29 +1,37 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 img {
   display: block;
   width: 100%;
 }
 
 .container {
-  width: $container-max-width;
+  width: 95%;
   max-width: $container-max-width;
   margin: 0 auto;
 
   &--narrow {
-    width: $container-narrow-width;
+    width: 95%;
     max-width: $container-narrow-width;
     margin: 0 auto;
   }
 
-  &--navigation {
-    width: $navigation-container-max-width;
-    max-width: $navigation-container-max-width;
-    margin: 0 auto;
-  }
-
   &--wide {
-    width: $container-wide-width;
+    width: 95%;
     max-width: $container-wide-width;
     margin: 0 auto;
+
+    @include respond-to(tab-land) {
+      // padding: 0 2rem;
+    }
   }
 }
 

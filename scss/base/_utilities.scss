@@ -33,3 +33,9 @@
 .background-primary-light {
   background-color: $background-primary-100;
 }
+
+.text-highlight {
+  border-bottom: 2px solid $color-primary-500;
+  font-weight: bold;
+  color: $color-primary-500;
+}

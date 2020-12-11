@@ -1,8 +1,24 @@
+/*
+Theme Name: Hip Hop Season
+Text Domain: hiphopseason
+Version: 1.0
+Author: Traek Wells
+License: GNU General Public License v2 or later
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+*/
+
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "base/reset";
 @import "base/utilities";
 @import "base/typography";
+@import "layout/base";
+@import "layout/navigation";
+@import "layout/footer";
 @import "components/buttons";
 @import "components/about-me";
 @import "components/faqs";
@@ -12,6 +28,4 @@
 @import "components/project";
 @import "components/testimonials";
 @import "components/header";
-@import "layout/base";
-@import "layout/navigation";
-@import "layout/footer";
+@import "components/forms";

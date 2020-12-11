@@ -1,6 +1,11 @@
 .cards {
   display: flex;
 
+  @include respond-to(tab-port) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &:hover .card:not(:hover) {
     opacity: 0.3;
   }
@@ -11,24 +16,32 @@
   border-radius: $border-radius-lg;
   padding: 3rem;
   transition: 0.2s ease all;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  @include respond-to(tab-port) {
+    margin-bottom: 2rem;
+    width: 80%;
+  }
 
   &:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 3rem;
+
+    @include respond-to(tab-port) {
+      margin-right: 0;
+    }
   }
 
   &:hover {
     transform: scale(1.05);
   }
 
-  &__title {
-    margin-bottom: 2rem;
-  }
-
   &__content {
-    margin-bottom: 3rem;
+    margin-bottom: auto;
   }
 
-  &__link {
-    color: $color-white;
+  @include respond-to(tab-land) {
+    padding: 2.5rem;
   }
 }

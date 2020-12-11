@@ -1,14 +1,25 @@
 .navigation {
-  background-color: $color-white;
+  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   z-index: 10;
+
+  &.scrolled {
+    background-color: $color-white;
+  }
+
+  .container--navigation {
+    width: 100%;
+    max-width: $navigation-container-max-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
 
   .logo {
     height: 3rem;
@@ -19,6 +30,10 @@
 
   &__list {
     display: flex;
+
+    @include respond-to(tab-port) {
+      display: none;
+    }
   }
 
   &__item {
@@ -35,5 +50,19 @@
     text-decoration: none;
     padding: 2.5rem 2.5rem;
     font-size: 1.6rem;
+  }
+
+  &__cta {
+    @include respond-to(tab-port) {
+      display: none;
+    }
+  }
+
+  .menu {
+    display: none;
+    @include respond-to(tab-port) {
+      display: block;
+      margin: 1.5rem 0;
+    }
   }
 }

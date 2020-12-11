@@ -12,7 +12,7 @@
   }
 
   &__image {
-    flex-basis: 50%;
+    flex-basis: 55%;
 
     img {
       object-fit: cover;
@@ -25,9 +25,14 @@
     background-color: $color-white;
     border-radius: $border-radius-lg;
     @extend %box-shadow;
-    flex-basis: 35%;
+    flex-basis: 45%;
     padding: 4rem;
     margin: 7rem 0 7rem -10rem;
+
+    @include respond-to(phone-large) {
+      flex-basis: 55%;
+      margin: 7rem 0 7rem -15rem;
+    }
 
     p {
       margin-bottom: 3rem;
@@ -39,6 +44,28 @@
       order: -1;
       z-index: 5;
       margin: 7rem -10rem 7rem 0;
+
+      @include respond-to(phone-large) {
+        margin: 7rem -15rem 7rem 0;
+      }
     }
+  }
+}
+
+.horizontal-feed {
+  display: flex;
+  margin-bottom: 5rem;
+
+  &__image {
+    margin-right: auto;
+    flex-basis: 47%;
+
+    img {
+      border-radius: $border-radius-lg;
+    }
+  }
+
+  &__content {
+    flex-basis: 47%;
   }
 }

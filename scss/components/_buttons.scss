@@ -3,22 +3,38 @@
   align-items: center;
 }
 
-.button {
-  display: inline-block;
-
+.button,
+button.button {
+  border: none;
   font-family: $font-stack-body;
-
-  border-radius: 0.5rem;
+  border-radius: 5rem;
   padding: 1.5rem 2rem;
+  min-width: 12rem;
+  text-align: center;
+  transition: 0.3s ease all;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   &--primary {
     background-color: $color-primary-700;
     color: $color-white;
+
+    &:hover {
+      background-color: $color-primary-900;
+    }
   }
 
   &--ghost {
     background-color: $color-white;
     border: 2px solid $color-primary-700;
     color: $color-primary-700;
+
+    &:hover {
+      background-color: $color-primary-900;
+      color: $color-white;
+      border: 2px solid transparent;
+    }
   }
 }
