@@ -21,7 +21,7 @@
           $imageId = get_post_thumbnail_id(get_the_ID());
           $altText = get_post_meta($imageId, '_wp_attachment_image_alt', true);
       ?>
-      <div class="horizontal-feed">
+      <div class="horizontal-feed" data-aos="fade-up">
         <div class="horizontal-feed__image">
           <img src="<?php the_post_thumbnail_url('project-thumbnail'); ?>" alt="<?php echo $altText; ?>" />
         </div>
@@ -32,6 +32,11 @@
         </div>
       </div>
       <?php } wp_reset_postdata(); ?>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container--narrow">
+      <?php get_template_part('./template-parts/lets-talk'); ?>
     </div>
   </section>
 

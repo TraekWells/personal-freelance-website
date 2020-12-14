@@ -3,7 +3,10 @@
 function file_setup()
 {
   wp_enqueue_script('feather-icons', 'https://unpkg.com/feather-icons', NULL, '1.0', false);
+  wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js', NULL, '1.0', true);
+  wp_enqueue_script('aos', 'https://unpkg.com/aos@next/dist/aos.js', NULL, '1.0', true);
   wp_enqueue_script('main_scripts', get_theme_file_uri('/js/main.js?v1'), NULL, '1.0', true);
+  wp_enqueue_style( 'aos', 'https://unpkg.com/aos@next/dist/aos.css');
   wp_enqueue_style('main', get_template_directory_uri() . '/css/styles.css', array(), filemtime(get_template_directory() . '/css/styles.css'), false);
 }
 

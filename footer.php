@@ -2,8 +2,8 @@
       <div class="footer__top container">
         <div class="footer-bio">
           <img src="https://placeimg.com/100/100/random" alt="" class="footer-image">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <a href="<?php echo site_url( '/contact-me' ); ?>" class="button button--ghost">Get a Free Quote</a>
+          <p clas="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <a href="<?php echo site_url( '/contact-me' ); ?>" class="text-link">Get a Free Quote <i data-feather="arrow-right"></i></a>
         </div>
         <div class="footer-list">
           <h4>Pages</h4>

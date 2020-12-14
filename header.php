@@ -22,8 +22,11 @@
       <li class="navigation__item">
         <a href="<?php echo site_url( '/my-story' ); ?>" class="navigation__link">My Story</a>
       </li>
+      <li class="navigation__item">
+      <a class="navigation__cta button button--ghost" href="<?php echo site_url( '/contact-me' ); ?>">Contact Me Today</a>
+      </li>
     </ul>
-    <a class="button button--ghost navigation__cta" href="<?php echo site_url( '/contact-me' ); ?>">Contact Me Today</a>
-    <button class="button button--ghost menu">Menu</button>
+    <button class="button button--ghost menu-button menu-button__open">Menu <i data-feather="menu"></i></button>
+    <button class="button button--ghost menu-button menu-button__close">Close <i data-feather="x"></i></button>
   </div>
 </nav>

@@ -34,5 +34,10 @@
     </div>
   </div>
 </section>
+<section class="section">
+  <div class="container--narrow">
+    <?php get_template_part('./template-parts/lets-talk'); ?>
+  </div>
+</section>
 
 <?php get_footer(); ?>
