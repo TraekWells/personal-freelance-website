@@ -18,10 +18,18 @@ img {
   max-width: $container-max-width;
   margin: 0 auto;
 
+  @include respond-to(tab-land) {
+    width: 90%;
+  }
+
   &--narrow {
     width: 95%;
     max-width: $container-narrow-width;
     margin: 0 auto;
+
+    @include respond-to(tab-land) {
+      width: 90%;
+    }
   }
 
   &--wide {
@@ -30,11 +38,15 @@ img {
     margin: 0 auto;
 
     @include respond-to(tab-land) {
-      // padding: 0 2rem;
+      width: 90%;
     }
   }
 }
 
 .section {
   padding: 7rem 0;
+
+  @include respond-to(phone-large) {
+    padding: 6rem 0;
+  }
 }

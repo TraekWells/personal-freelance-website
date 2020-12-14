@@ -1,8 +1,7 @@
 // Mixins
 
 /*
-  phone-small:  450px
-  phone:        650px
+  phone:        600px
   phone-large:  700px
   tab-port:     750px
   tab-land:     1000px
@@ -10,11 +9,6 @@
 */
 
 @mixin respond-to($breakpoint) {
-  @if $breakpoint == phone-small {
-    @media only screen and (max-width: 28.125em) {
-      @content;
-    }
-  }
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
       @content;

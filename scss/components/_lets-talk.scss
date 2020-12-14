@@ -1,0 +1,25 @@
+.lets-talk {
+  position: relative;
+  background-color: $color-primary-100;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+
+  &__content {
+    width: 65%;
+    padding: 3rem;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 40%;
+
+    img {
+      object-fit: cover;
+      clip-path: polygon(5rem 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}

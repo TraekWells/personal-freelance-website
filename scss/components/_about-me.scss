@@ -1,11 +1,22 @@
 .about-me {
   display: flex;
+
+  @include respond-to(phone) {
+    flex-direction: column;
+  }
+
   &__image {
     flex-basis: 45%;
     margin-right: 5rem;
     position: relative;
     border-radius: $border-radius-lg;
     overflow: hidden;
+
+    @include respond-to(phone) {
+      margin: 0 0 3rem;
+      flex-basis: auto;
+      max-height: 30rem;
+    }
 
     &::before {
       content: "";

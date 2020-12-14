@@ -1,21 +1,24 @@
 .button-group {
   display: flex;
   align-items: center;
+
+  @include respond-to(phone-large) {
+    justify-content: center;
+  }
 }
 
-.button,
-button.button {
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: none;
+  cursor: pointer;
   font-family: $font-stack-body;
   border-radius: 5rem;
   padding: 1.5rem 2rem;
   min-width: 12rem;
   text-align: center;
   transition: 0.3s ease all;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 
   &--primary {
     background-color: $color-primary-700;

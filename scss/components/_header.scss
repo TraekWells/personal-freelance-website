@@ -22,6 +22,12 @@
         flex-basis: 60%;
         margin-right: 5rem;
       }
+
+      @include respond-to(phone-large) {
+        flex-basis: 100%;
+        margin-right: 0;
+        text-align: center;
+      }
     }
 
     &__image-container {
@@ -30,6 +36,10 @@
 
       @include respond-to(tab-land) {
         flex-basis: 40%;
+      }
+
+      @include respond-to(phone-large) {
+        display: none;
       }
 
       img {
