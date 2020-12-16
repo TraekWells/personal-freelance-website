@@ -1,6 +1,7 @@
 .header {
   text-align: center;
   padding-top: 14rem;
+  padding-bottom: 2rem;
 
   @include respond-to(tab-land) {
     padding-top: 12rem;
@@ -45,7 +46,7 @@
       img {
         border-radius: 1rem;
         object-fit: cover;
-        height: 110%;
+        height: 115%;
 
         @include respond-to(tab-land) {
           height: 120%;

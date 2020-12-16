@@ -1,5 +1,6 @@
 .testimonials {
   display: flex;
+  justify-content: center;
 
   @include respond-to(phone) {
     flex-direction: column;
@@ -10,6 +11,7 @@
     background-color: $color-primary-100;
     padding: 3rem;
     border-radius: $border-radius-lg;
+    flex-basis: 60%;
 
     @include respond-to(phone) {
       max-width: 85%;

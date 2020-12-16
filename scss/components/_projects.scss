@@ -17,16 +17,18 @@
 
   &__image {
     flex-basis: 55%;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
 
     img {
       object-fit: cover;
       height: 100%;
-      border-radius: $border-radius-lg;
     }
 
     @include respond-to(phone) {
       flex-basis: auto;
       height: 60rem;
+      border-radius: $border-radius-lg $border-radius-lg 0 0;
     }
   }
 
@@ -44,6 +46,7 @@
 
       @include respond-to(phone) {
         margin: auto;
+        border-radius: 0 0 $border-radius-lg $border-radius-lg;
       }
     }
 

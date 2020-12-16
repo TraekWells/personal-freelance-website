@@ -46,8 +46,16 @@
   border-bottom: 2px solid $color-primary-500;
   font-weight: bold;
   color: $color-primary-500;
+  font-style: italic;
 }
 
 .svg-icon {
   width: 3.5rem;
+}
+
+.accent-dots {
+  position: relative;
+  background-image: url("../img/dots.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 125%;
 }
