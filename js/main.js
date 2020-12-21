@@ -43,7 +43,7 @@
       duration: 0,
       display: "flex",
       position: "absolute",
-      top: "20%",
+      top: "10%",
       right: 0,
       bottom: 0,
       left: 0,
@@ -55,7 +55,7 @@
     tl.to(navbar, {
       duration: 0.05,
       height: 100 + "%",
-      backgroundColor: "hsl(283, 49, 97)",
+      backgroundColor: "rgb(249, 244, 251)",
     });
     tl.to(".navigation__item", {
       opacity: 1,
@@ -71,10 +71,10 @@
       closeMenuButton.style.display = "flex";
     });
     closeMenuButton.addEventListener("click", function () {
-      tl.reverse();
       navbar.style.backgroundColor = "#ffffff";
       closeMenuButton.style.display = "none";
       openMenuButton.style.display = "flex";
+      tl.reverse();
     });
   };
 
