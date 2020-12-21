@@ -66,4 +66,8 @@
   background-image: url("../img/dots.svg");
   background-repeat: no-repeat;
   background-position: 0% 125%;
+
+  @include respond-to(phone) {
+    background-image: none;
+  }
 }

@@ -15,7 +15,7 @@
     width: 100%;
     max-width: $navigation-container-max-width;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 0 3rem;
@@ -84,8 +84,8 @@
     display: block;
     color: $color-body-text;
     text-decoration: none;
-    padding: 3rem;
-    font-size: 1.6rem;
+    padding: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .menu-button {
@@ -106,7 +106,7 @@
   }
 
   &.scrolled {
-    background-color: $color-white;
+    background-color: $color-white !important;
     @extend %box-shadow;
   }
 
