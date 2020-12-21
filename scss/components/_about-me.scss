@@ -6,7 +6,7 @@
   }
 
   &__image {
-    flex-basis: 45%;
+    flex-basis: 50%;
     margin-right: 5rem;
     position: relative;
     border-radius: $border-radius-lg;
@@ -30,6 +30,6 @@
   }
 
   &__content {
-    flex-basis: 55%;
+    flex-basis: 50%;
   }
 }

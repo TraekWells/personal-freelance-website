@@ -1,81 +1,16 @@
-.homepage-projects {
-  display: flex;
-  flex-direction: column;
-}
-
-.homepage-project {
-  display: flex;
-  justify-content: center;
-
-  @include respond-to(phone) {
-    flex-direction: column;
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 8rem;
-  }
-
-  &__image {
-    flex-basis: 55%;
-    border-radius: $border-radius-lg;
-    overflow: hidden;
-
-    img {
-      object-fit: cover;
-      height: 100%;
-    }
-
-    @include respond-to(phone) {
-      flex-basis: auto;
-      height: 60rem;
-      border-radius: $border-radius-lg $border-radius-lg 0 0;
-    }
-  }
-
-  &__content {
-    background-color: $color-white;
-    border-radius: $border-radius-lg;
-    @extend %box-shadow;
-    flex-basis: 45%;
-    padding: 4rem;
-    margin: 7rem 0 7rem -10rem;
-
-    @include respond-to(phone-large) {
-      flex-basis: 55%;
-      margin: 7rem 0 7rem -15rem;
-
-      @include respond-to(phone) {
-        margin: auto;
-        border-radius: 0 0 $border-radius-lg $border-radius-lg;
-      }
-    }
-
-    p {
-      margin-bottom: 3rem;
-    }
-  }
-
-  &:nth-child(2) {
-    .homepage-project__content {
-      order: -1;
-      z-index: 5;
-      margin: 7rem -10rem 7rem 0;
-
-      @include respond-to(phone-large) {
-        margin: 7rem -15rem 7rem 0;
-      }
-
-      @include respond-to(phone) {
-        order: 1;
-        margin: auto;
-      }
-    }
-  }
-}
-
 .horizontal-feed {
   display: flex;
   margin-bottom: 10rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
 
   @include respond-to(tab-port) {
     flex-direction: column;
