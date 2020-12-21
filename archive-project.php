@@ -5,7 +5,7 @@
     <span class="header-lead">Portfolio</span>
     <h1>Projects That I’ve Worked On Recently</h1>
     <div class="seperator"></div>
-    <p>Si sine causa, mox videro; interea hoc tenebo, si ob aliquam causam non provident, similique sunt vitae dicta sunt, fecerint, virtutem iis per se esse appetendum, alterum esse fugiendum itaque turbent.</p>
+    <p>Being a freelance WordPress Developer has given me the pleasure of working with a handful of clients and with each project, I got to learn something about myself and improve some aspect of my process. Here are few of the larger projects that I’ve done for people.</p>
   </div>
 </header>
   <section class="section">
@@ -26,7 +26,7 @@
           <img src="<?php the_post_thumbnail_url('project-thumbnail'); ?>" alt="<?php echo $altText; ?>" />
         </div>
         <div class="horizontal-feed__content">
-          <h3 class="margin-bottom-0"><?php the_title(); ?></h3>
+          <h2><?php the_title(); ?></h2>
           <p><?php the_excerpt(); ?></p>
           <a href="<?php echo the_permalink(); ?>" class="text-link">Project Details <i data-feather="arrow-right"></i></a>
         </div>

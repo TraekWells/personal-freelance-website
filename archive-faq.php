@@ -5,7 +5,7 @@
     <span class="header-lead">FAQ</span>
     <h1>Frequently Asked Questions</h1>
     <div class="seperator"></div>
-    <p>Si sine causa, mox videro; interea hoc tenebo, si ob aliquam causam non provident, similique sunt vitae dicta sunt, fecerint, virtutem iis per se esse appetendum, alterum esse fugiendum itaque turbent.</p>
+    <p>Web Development can be extremely confusing. Here are my answers to some of the most common questions that I’ve been asked about WordPress and Web Development in general.</p>
   </div>
 </header>
 <section class="section">
@@ -23,7 +23,7 @@
       ?>
       <div class="faq">
       <div class="faq__question">
-        <p><?php echo the_title(); ?></p>
+        <h4><?php echo the_title(); ?></h4>
         <i data-feather="chevron-down"></i>
       </div>
       <div class="faq__answer">

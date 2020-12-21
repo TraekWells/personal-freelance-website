@@ -1,31 +1,21 @@
 <?php get_header(); ?>
 
-<header class="header">
-  <img src="<?php echo get_template_directory_uri() . '/img/contact-me-hero-image.jpg'; ?>" alt="" />
-  <div class="header__content">
-    <h1>Uh oh. How did you end up here?</h1>
+<header class="header intro">
+  <div class="container--narrow">
+    <span class="header-lead">Uh.. Oh</span>
+    <h1>I Think You're Lost</h1>
+    <div class="seperator"></div>
+    <p>Hopefully one of these links get you back on track.</p>
+    <div class="button-group jc-c">
+      <a class="button button--primary mr-3" href="<?php echo site_url( '/' ); ?>">Go to the Homepage</a>
+      <a href="<?php echo get_post_type_archive_link( 'project' ); ?>" class="text-link">See My Work <i data-feather="arrow-right"></i></a>
+    </div>
   </div>
 </header>
-<main class="main">
-  <section class="section section--dark-1">
-    <div class="container">
-    <div class="section__content">
-      <div class="section__content-column">
-      <p>Maybe you're looking for one of these?</p>
-      <div class="button-group">
-        <a href="<?php echo site_url('/portfolio') ?>" class="button button--primary margin-right-3"
-          >See My Work
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </a>
-        <a href="<?php echo site_url('/contact-me') ?>" class="button button--ghost">Contact Me</a>
-      </div>
-      </div>
-      <div class="section__content-column">
-        <img src="https://media.giphy.com/media/xT0xeh7KMi11ijnE9W/giphy.gif" alt="">
-      </div>
-    </div>
-    </div>
-  </section>
-</main>
+<section>
+  <div class="container">
+    <img src="<?php echo get_theme_file_uri( 'img/404-image.png' ); ?>" alt="">
+  </div>
+</section>
 
 <?php get_footer(); ?>

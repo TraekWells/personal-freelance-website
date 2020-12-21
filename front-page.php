@@ -2,48 +2,45 @@
 <header class="header header--home background-secondary-light">
   <div class="container">
     <div class="header--home">
-      <div class="header--home__text">
-        <h1>Need a beautiful website to go along with your business?</h1>
+      <div class="header--home__text" data-aos="fade-right">
+        <h1>Do you need a beautiful website to go along with your business?</h1>
         <p class="lead mb-4">
-          You’ve come to the right place! I’m Traek and I'm a freelance Web Developer who
+          You’ve come to the right place! I’m Traek and I'm a freelance <span class="text-highlight">WordPress Developer</span> who
           helps small businesses and people like you who want to increase their online
           presence.
         </p>
         <div class="button-group">
           <a class="button button--primary mr-3" href="<?php echo site_url( '/contact-me' ); ?>">Get a Free Quote</a>
-          <a href="<?php echo get_post_type_archive_link( 'project' ); ?>" class="text-link">See My Projects <i data-feather="arrow-right"></i></a>
+          <a href="<?php echo get_post_type_archive_link( 'project' ); ?>" class="text-link">See My Work <i data-feather="arrow-right"></i></a>
         </div>
       </div>
-      <div class="header--home__image-container">
-        <img src="https://placeimg.com/350/450/people" alt="" />
+      <div class="header--home__image-container" data-aos="fade-left" data-aos-delay="200">
+        <img src="<?php echo get_theme_file_uri('img/homepage-profile-image.jpg') ?>" alt="Picture of Traek Wells" />
       </div>
     </div>
   </div>
 </header>
-<section class="section mt-3">
+<section class="section mt-3 accent-dots" data-aos="fade-up" data-aos-delay="300">
   <div class="container--narrow">
-    <h2 class="text-center">Why You Need A Website</h2>
+    <h2 class="text-center">Why You Need A Beautiful Website</h2>
     <div class="seperator"></div>
-    <p class="text-center">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat. Duis aute irure dolor in
-      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-      pariatur.
+    <p>
+      For each day that passes where you either don't have a website <strong>or</strong> don't have a good looking website, you're giving your competition that much more of an advantage.</p> 
+      <p>Unless you're doing some <strong>serious</strong> analog marketing, you'll more than likely be invisible to the people who could use your help.
     </p>
+    <p>In these modern times, it's no longer enough to only have a website. That website needs to look good, be easy to navigate and work on every device.</p>
+    <p>That's where I, as a freelance <span class="text-highlight">WordPress Developer</span> comes in.</p>
+    <p>Whether you already have a website and it needs a re-design, or you want your current site transferred over to WordPress or you're starting from scratch with a new website, I can help you with all of those.</p>
   </div>
 </section>
 <section class="section">
   <div class="container--narrow">
-    <h2 class="text-center">Ok.. So Why Hire Me?</h2>
+    <h2 class="text-center">What Makes Me Different</h2>
     <div class="seperator"></div>
-    <p class="text-center mb-3">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat.
+    <p>
+      As a Graphic Design major turned freelance <span class="text-highlight">WordPress Developer</span>, I know how to bridge the gap between <span class="text-highlight">great design</span> and <span class="text-highlight">functional, lightweight code</span>. Since I'll be handling the design and the development of your website, you won't have to worry about any miscommunication between designer and developers, I can do them both!
     </p>
+    <p class="mb-3">Here is what I can do for you.</p>
   </div>
   <div class="container--wide">
     <div class="cards">
@@ -64,7 +61,7 @@
           </g>
         </svg>
         <h3 class="card__title mb-2">WordPress Theme Development</h3>
-        <p class="card__content">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="card__content">With so many websites out there, it's important for a website to stand out. That's why I take pride in building custom WordPress themes from scratch instead of using pre-made templates.</p>
       </div>
       <div class="card" data-aos="fade-up" data-aos-delay="200">
       <svg
@@ -83,7 +80,7 @@
           </g>
         </svg>
         <h3 class="card__title mb-2">Convert an Existing Website into WordPress</h3>
-        <p class="card__content">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="card__content">If you already have a website and you need it converted to a WordPress theme, I can handle that for you. Enjoy the benefits of using your current design with the WordPress admin dashboard.</p>
       </div>
       <div class="card" data-aos="fade-up" data-aos-delay="300">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393.21 355.82" class="svg-icon mb-2">
@@ -107,20 +104,18 @@
           </g>
           </svg>
         <h3 class="card__title mb-2">User Interface Design</h3>
-        <p class="card__content">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="card__content">Do you already have a website that's in need of a re-design? Already have a developer and just looking for a design? No problem. I can help give your website a modern look that will keep your audience engaged on any device.</p>
       </div>
     </div>
   </div>
 </section>
-<section class="section background-secondary-light">
-  <h2>Take a look at who I've helped recently</h2>
-  <div class="seperator"></div>
+<section class="section">
+  <h2 class="text-center">Take a look at who I've helped recently</h2>
+  <div class="seperator mb-4"></div>
   <div class="container">
-    <div class="homepage-projects">
       <?php
         $args = array(
-          'post_type' => 'project',
-          'posts_per_page' => -1
+          'post_type' => 'project'
         );
         $projectQuery = new WP_Query($args);
 
@@ -131,18 +126,17 @@
 
           if (get_field('featured_project') === true) {
       ?>
-      <div class="homepage-project" data-aos="fade-up" data-aos-delay="150">
-        <div class="homepage-project__image" >
-          <img src="https://placeimg.com/1550/400/people" alt="<?php echo $altText; ?>">
+      <div class="horizontal-feed mt-4" data-aos="fade-up">
+        <div class="horizontal-feed__image">
+          <img src="<?php the_post_thumbnail_url('project-thumbnail'); ?>" alt="<?php echo $altText; ?>" />
         </div>
-        <div class="homepage-project__content">
-          <h3><?php echo the_title(); ?></h3>
-          <p><?php echo the_excerpt(); ?></p>
-          <a href="<?php the_permalink(); ?>" class="button button--ghost">Project Details</a>
+        <div class="horizontal-feed__content">
+          <h2><?php the_title(); ?></h2>
+          <p><?php the_excerpt(); ?></p>
+          <a href="<?php echo the_permalink(); ?>" class="text-link">Project Details <i data-feather="arrow-right"></i></a>
         </div>
       </div>
       <?php } } wp_reset_postdata(); ?>
-    </div>
   </div>
 </section>
 <section class="section">
@@ -151,23 +145,22 @@
   </div>
 </section>
 <section class="section">
-  <h2>A Little Bit About Me</h2>
+  <h2 class="text-center">A Little Bit About Me</h2>
   <div class="seperator"></div>
   <div class="container--narrow">
     <div class="about-me">
       <div class="about-me__image">
-        <img src="https://placeimg.com/450/600/people" alt="">
+        <img src="<?php echo get_theme_file_uri( 'img/about-me-image.jpg' );  ?>" alt="">
       </div>
       <div class="about-me__content">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas amet fugit minima deleniti at corporis laboriosam ea culpa quam deserunt?</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas amet fugit minima deleniti at corporis laboriosam ea culpa quam deserunt?</p>
+        <p>Shortly after graduating college as a Graphic Design major, I discovered Web Development and fell in love with it. I committed to harnessing my energy and spare time into becoming a freelance <span class="text-highlight">WordPress Developer</span> so that I could help small businesses and people wanting to increase their online presence.</p>
         <a href="<?php echo site_url( '/my-story' ); ?>" class="text-link">Learn More <i data-feather="arrow-right"></i></a>
       </div>
     </div>
   </div>
 </section>
 <section class="section">
-  <h2>Frequently Asked Questions</h2>
+  <h2 class="text-center">Frequently Asked Questions</h2>
   <div class="seperator"></div>
   <div class="container--narrow">
     <div class="faqs">
@@ -183,7 +176,7 @@
       ?>
       <div class="faq">
         <div class="faq__question">
-          <p><?php echo the_title(); ?></p>
+          <h4><?php echo the_title(); ?></h4>
           <i data-feather="chevron-down"></i>
         </div>
         <div class="faq__answer">

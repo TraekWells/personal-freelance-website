@@ -11,8 +11,10 @@
 <body <?php body_class(); ?>>
 <nav class="navigation">
   <div class="container--navigation">
-    <a  href="<?php echo get_site_url('/'); ?>" class="logo">Logo</a>
     <ul class="navigation__list">
+      <li class="navigation__item">
+        <a href="<?php echo get_site_url('/'); ?>" class="navigation__link">Home</a>
+      </li>
       <li class="navigation__item">
         <a href="<?php echo site_url( '/services' ); ?>" class="navigation__link">Services</a>
       </li>
