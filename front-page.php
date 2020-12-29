@@ -63,7 +63,7 @@
         <h3 class="card__title mb-2">WordPress Theme Development</h3>
         <p class="card__content">With so many websites out there, it's important for a website to stand out. That's why I take pride in building custom WordPress themes from scratch instead of using pre-made templates.</p>
       </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill-rule="evenodd"
