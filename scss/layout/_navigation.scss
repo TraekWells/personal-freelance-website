@@ -15,17 +15,14 @@
     width: 100%;
     max-width: $navigation-container-max-width;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 0 3rem;
   }
 
   .logo {
-    height: 3rem;
-    width: 10rem;
-    background-color: slategray;
-    margin-right: auto;
+    width: 7rem;
   }
 
   &__list {
